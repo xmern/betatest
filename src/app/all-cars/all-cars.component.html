@@ -1,0 +1,11 @@
+<div>
+
+
+    <div class="classTable" >
+        <div><p>Registered classes</p></div>
+        <!-- <app-loading-spinner *ngIf="loadingData"></app-loading-spinner> -->
+        <div class="tableItem" *ngFor="let car of allCars" >
+            <p>{{car.name}}</p>
+        </div> 
+    </div>
+</div>
