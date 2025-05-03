@@ -1,11 +1,21 @@
 <div>
 
 
-    <div class="classTable" >
+    <!-- <div class="classTable" >
         <div><p>Registered classes</p></div>
-        <!-- <app-loading-spinner *ngIf="loadingData"></app-loading-spinner> -->
+        
         <div class="tableItem" *ngFor="let car of allCars" >
             <p>{{car.name}}</p>
+        </div> 
+    </div> -->
+    <div class="classTable" >
+        <div><p>Weather</p></div>
+        <!-- <app-loading-spinner *ngIf="loadingData"></app-loading-spinner> -->
+        <div class="tableItem" *ngFor="let forecast of weatherForecasts" >
+            <p>{{forecast.date}}</p>
+            <p>{{forecast.temperatureC}}</p>
+            <p>{{forecast.TemperatureF}}</p>
+            <p>{{forecast.Summary}}</p>
         </div> 
     </div>
 </div>
